@@ -1,0 +1,10 @@
+{
+    "display_name": "Auto Appearance Tagger",
+    "loading_order": 101,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "author": "Gaurav",
+    "version": "1.0.0",
+    "description": "Automatically extracts character appearance tags using WD Tagger and LLM."
+}
