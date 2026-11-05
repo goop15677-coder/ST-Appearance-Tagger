@@ -21,11 +21,20 @@ An advanced, fully automated character consistency pipeline for SillyTavern. Thi
 1. Make sure the **Image Generation** extension is enabled in SillyTavern.
 2. Select a character.
 3. Click the new **Camera** icon next to the Skull (Delete) button.
-4. Select the images you want to process (uncheck any banners or memes).
-5. Click **Process Selected Images**.
-6. Watch the cinematic UI extract the tags.
+
+![Camera Button](camera-button.png)
+
+4. Select the images you want to process. You can easily uncheck banners, memes, or extra characters!
+
+![Image Selection](image-selection.png)
+
+5. Click **Process Selected Images**. 
+6. Watch the cinematic UI automatically detect the face, crop it for maximum detail, and extract the tags in real-time.
+
+![UI Preview](ui-preview.png)
+
 7. Review the raw tags, then click **Send to LLM**.
-8. Review the final prompt and click **Save to Character**.
+8. Review the final prompt (which includes the calculated Age Slider LoRA) and click **Save to Character**.
 9. Start roleplaying! The Image Gen extension will now automatically append her physical traits to every generated image.
 
 ## ⚙️ Configuration
