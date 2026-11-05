@@ -623,7 +623,9 @@ Raw Tags:
             const character = context.characters[context.characterId];
             if (!character) return;
 
-            const foundUrls = [ `/characters/${character.avatar}`, ...extractImages(JSON.stringify(character)) ];
+            // Scrape the modern V2/V3 data object AND the lorebook, ignoring legacy root arrays
+            const scrapeString = JSON.stringify(character.data || character) + JSON.stringify(character.character_book || {});
+            const foundUrls = [ `/characters/${character.avatar}`, ...extractImages(scrapeString) ];
             let imagesHtml = '';
             
             foundUrls.forEach((url, index) => {
